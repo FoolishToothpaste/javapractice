@@ -1,5 +1,5 @@
 package ArrPracs;
-import java.util.*;
+import java.util.*; //Importing java.util.*
 
 public class AscCheck {
 
