@@ -1,5 +1,5 @@
 package stringtest;
-import java.util.*;
+import java.util.*; //Importing java.util.*
 
 public class Bit1Count 
 {
