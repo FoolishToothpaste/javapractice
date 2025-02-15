@@ -11,19 +11,24 @@ public class SumNaturalCompare
 		System.out.println("Enter the number of natural numbers:");
 		number = sc.nextInt(); //Inputting the number of terms from the user
 		
-		sum1 = (number * (number+1)) / 2; //Calculating the sum of n natural numbers using formulae
-		
-		while(i <= number) //While Loop
+		if(number<=0) //Checking if the number of terms is a natural number
+			System.out.println("The number "+ number +" is not a natural number"); //Displaying Final Output
+		else
 		{
-			sum2+= i; //Calculating the sum of n natural numbers using loop
-			i++; //Incrementing the while counter
-		} //End While Loop
+			sum1 = (number * (number+1)) / 2; //Calculating the sum of n natural numbers using formulae
 		
-		if(sum1 == sum2) //Comparing results of the two methods
-		{
-			//Displaying Final Output
-			System.out.println("Results matched");
-			System.out.println("Sum = "+ sum1);
-		} //End If Block
+			while(i <= number) //While Loop
+			{
+				sum2+= i; //Calculating the sum of n natural numbers using loop
+				i++; //Incrementing the while counter
+			} //End While Loop
+		
+			if(sum1 == sum2) //Comparing results of the two methods
+			{
+				//Displaying Final Output
+				System.out.println("Results matched");
+				System.out.println("Sum = "+ sum1);
+			} //End Else Block
+		}
 	} //End Method
 } //End Class

@@ -11,12 +11,17 @@ public class Factorial
 		System.out.println("Enter the number to find the factorial of:");
 		n = sc.nextInt(); //Inputting the number from the user
 		
-		while(i <= n) //While Loop
+		if(n<0) //Checking if the number is positive
+			System.out.println(n + " is not a positive number."); //Displaying Final Output
+		else
 		{
-			fact*= i; //Multiplying the numbers to find the factorial
-			i++; //Incrementing while counter
-		} //End While Loop
+			while(i <= n) //While Loop
+			{
+				fact*= i; //Multiplying the numbers to find the factorial
+				i++; //Incrementing while counter
+			} //End While Loop
 		
-		System.out.println("Factorial = "+ fact); //Displaying Final Output
+			System.out.println("Factorial = "+ fact); //Displaying Final Output
+		} //End Else Block
 	} //End Method
 } //End Class

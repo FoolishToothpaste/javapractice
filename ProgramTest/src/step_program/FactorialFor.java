@@ -10,12 +10,16 @@ public class FactorialFor
 		Scanner sc=new Scanner(System.in); //Initializing Scanner object
 		System.out.println("Enter the number to find the factorial of:");
 		n = sc.nextInt(); //Inputting the number from the user
-		
-		for(int i = 1; i <= n; i++) //For Loop
+		if(n<=0) //Checking if the number is a natural number
+			System.out.println("The number "+ n +" is not a natural number"); //Displaying Final Output
+		else
 		{
-			fact*= i; //Multiplying the numbers to find the factorial
-		} //End For Loop
+			for(int i = 1; i <= n; i++) //For Loop
+			{
+				fact*= i; //Multiplying the numbers to find the factorial
+			} //End For Loop
 		
-		System.out.println("Factorial = "+ fact); //Displaying Final Output
+			System.out.println("Factorial = "+ fact); //Displaying Final Output
+		} //End Else Block
 	} //End Method
 } //End Class
