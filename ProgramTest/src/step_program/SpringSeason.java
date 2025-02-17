@@ -12,7 +12,7 @@ public class SpringSeason
 		month = sc.nextInt(); //Inputting the month number from the user
 		day = sc.nextInt(); //Inputting the day number from the user
 		
-		if((month == 3 && day >= 20 && day <= 31) || (month == 4 && day >= 1 && day <= 20)) //Checking the conditions
+		if((month == 3 && day >= 20 && day <= 31) || (month == 6 && day >= 1 && day <= 20) || (month == 4 && day >= 1 && day <= 30) || (month == 5 && day >= 1 && day <= 31)) //Checking the conditions
 			System.out.println("Its a Spring Season"); //Displaying Final Output
 		else //If condition not matched
 			System.out.println("Not a Spring Season"); //Displaying Final Output 
