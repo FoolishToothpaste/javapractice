@@ -12,7 +12,7 @@ public class YardMileInput
 		distanceInFeet = sc.nextDouble(); //Inputting the distance in feet from the user
 		
 		yard = distanceInFeet / 3; //Converting distance in feet to yards
-		miles = distanceInFeet / 5280; //Converting distance in feet to miles
+		miles = yard / 1760; //Converting distance in feet to miles
 		
 		//Displaying final output
 		System.out.println("Your Distance in feet is "+ distanceInFeet +" while in yards is "+ yard +" and miles is "+ miles);
