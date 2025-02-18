@@ -11,7 +11,7 @@ public class Factorial
 		System.out.println("Enter the number to find the factorial of:");
 		n = sc.nextInt(); //Inputting the number from the user
 		
-		if(n<0) //Checking if the number is positive
+		if(n<=0) //Checking if the number is positive
 			System.out.println(n + " is not a positive number."); //Displaying Final Output
 		else
 		{
