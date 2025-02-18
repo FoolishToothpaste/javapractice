@@ -8,7 +8,7 @@ public class SumUntil0NegBreak
 	{
 		double i = 1.0, sum = 0.0; //Initializing variables
 		Scanner sc=new Scanner(System.in); //Initializing Scanner object
-		System.out.println("Start entering numbers to add, enter 0 to stop adding and print the result:");
+		System.out.println("Start entering numbers to add, enter 0 or a negative number to stop adding and print the result:");
 		while(true) //While Loop
 		{
 			i = sc.nextDouble(); //Inputting the numbers to be added to the sum from the user
