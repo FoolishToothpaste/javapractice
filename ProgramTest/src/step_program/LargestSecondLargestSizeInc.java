@@ -27,7 +27,7 @@ public class LargestSecondLargestSizeInc
 			number/= 10; //Removing the last digit from the number
 		} //End WHile Loop
 		
-		for(int i = 0; i < 10; i++) //For Loop
+		for(int i = 0; i < maxDigit; i++) //For Loop
 		{
 			//Conditional statements to find the largest and second largest digits
 			if(digits[i] > secondLargest) 
