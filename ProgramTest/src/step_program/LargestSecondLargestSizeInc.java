@@ -10,7 +10,7 @@ public class LargestSecondLargestSizeInc
 		long number;
 		int digits[] = new int[maxDigit]; //Initializing the array for storing digits of the number
 		Scanner sc=new Scanner(System.in); //Initializing Scanner object
-		System.out.println("Enter a number. Make sure it has less than 11 digits:");
+		System.out.println("Enter a number:");
 		number = sc.nextLong(); //Inputting the number from the user
 		
 		while(number > 0) //While Loop
